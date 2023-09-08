@@ -193,21 +193,34 @@ class MainWindow(QMainWindow):
         # new_x = rect_position.x() + self.step_x
         #new_y = rect_position.y() + self.step_y
 
+        x=0
+        y=0
+        #new_x = rect_position.x() + self.step_x
+        #new_y = rect_position.y() + self.step_y
 
-        new_x = rect_position.x() + self.step_x
-        new_y = rect_position.y() + self.step_y
+        new_x = x
+        new_y = self.ui.label_12.height() -y
 
-
-        # Cambiar la dirección cuando golpea los límites
-        if new_x + self.ui.rect_label.width() > self.ui.label_12.width() or new_x < 0:
+        if new_x + self.ui.rect_label.width() > self.ui.label_12.width():
+            new_x = self.ui.label_12.width() -
+        elif new_x < 0:
             self.step_x = -self.step_x
 
         if new_y + self.ui.rect_label.height() > self.ui.label_12.height() or new_y < 0:
             self.step_y = -self.step_y
 
-        self.ui.rect_label.move(new_x, new_y)
-        self.ui.label_16.setText( str(new_y))
-        self.ui.label_17.setText( str(new_x))
+        print(new_x, new_y,rect_position.x())
+        # Cambiar la dirección cuando golpea los límites
+        #if new_x + self.ui.rect_label.width() > self.ui.label_12.width() or new_x < 0:
+        #    self.step_x = -self.step_x
+
+        #if new_y + self.ui.rect_label.height() > self.ui.label_12.height() or new_y < 0:
+        #    self.step_y = -self.step_y
+
+
+        self.ui.rect_label.move(x,  self.ui.label_12.height() -y)
+        self.ui.label_16.setText(str(x))
+        self.ui.label_17.setText( str(y))
 
 ########################################################################
 ## EXECUTE  APP
