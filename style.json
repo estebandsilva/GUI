@@ -35,7 +35,7 @@
 			"height": "parent"
 		}],
 		"expandedSize": [{
-			"width": 320	,
+			"width": 340	,
 
 			"height": "parent"
 		}],
@@ -96,13 +96,17 @@
 			"name":"mainPages",
 			"navigation":[
 				{
-					"navigationButtons":[
+					"navigationButtons": [
 						{
 							"homeBtn": "page_8",
 							"dataBtn": "temperature_page",
 							"reportBtn": "flow_page",
 							"humidityBtn": "humidity_page",
-							"pressureBtn": "pressure_page"
+							"pressureBtn": "pressure_page",
+							"flow1Btn": "flow_1",
+							"flow2Btn":"flow_2",
+							"energy1Btn": "energy_1",
+							"energy2Btn": "energy_2"
 						}
 					]
 				}
@@ -147,7 +151,11 @@
 				"dataBtn",
 				"reportBtn",
 				"humidityBtn",
-				"pressureBtn"
+				"pressureBtn",
+				"flow1Btn",
+				"flow2Btn",
+				"energy1Btn",
+				"energy2Btn"
 			],
 			"Style":[{
 				"Active": "background-color: #1f232a;",
