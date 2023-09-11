@@ -37,11 +37,6 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        #Rectangle
-        self.timer = QTimer(self)
-        self.timer.timeout.connect(self.move_rectangle)
-        self.timer.start(50)
-
 
          # APPLY JSON STYLESHEET
         ########################################################################
@@ -74,22 +69,7 @@ class MainWindow(QMainWindow):
 ##Moving rectangle
 
 
-        self.step_x = 2
-        self.step_y = 2
 
-    def move_rectangle(self):
-        rect_position = self.rect_label.pos()
-        new_x = rect_position.x() + self.step_x
-        new_y = rect_position.y() + self.step_y
-
-        # Change direction when hitting boundaries
-        if new_x + self.rect_label.width() > self.width() or new_x < 0:
-            self.step_x = -self.step_x
-
-        if new_y + self.rect_label.height() > self.height() or new_y < 0:
-            self.step_y = -self.step_y
-
-        self.rect_label.move(new_x, new_y)
 
 ########################################################################
 ## EXECUTE  APP

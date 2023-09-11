@@ -7,7 +7,7 @@
 #pip install pyqt5
 
 ##Generamos el python con PySide2
-#pyuic5 -x interface.ui -o ui_interface.py
+    #pyuic5 -x interface.ui -o ui_interface.py
 #lo mismo con resources
 #pyrcc5 resources.qrc -o resources_rc.py
 
@@ -94,11 +94,33 @@ class MainWindow(QMainWindow):
 
         self.ui.closeRightMenuBtn.clicked.connect(lambda: self.ui.rightMenuContainer.collapseMenu())
 
+        ##Graph
+        self.ui.homeBtn.clicked.connect(lambda: self.printprueba())
+
+
+        self.ui.dataBtn.clicked.connect(lambda: self.printprueba())
+        self.ui.reportBtn.clicked.connect(lambda: self.printprueba())
+        self.ui.humidityBtn.clicked.connect(lambda: self.printprueba())
+        self.ui.pressureBtn.clicked.connect(lambda: self.printprueba())
+        self.ui.flow1Btn.clicked.connect(lambda: self.printprueba())
+        self.ui.flow2Btn.clicked.connect(lambda: self.printprueba())
+        self.ui.energy1Btn.clicked.connect(lambda: self.printprueba())
+        self.ui.energy2Btn.clicked.connect(lambda: self.printprueba())
+
+
+        ###START/STOP
+        self.ui.startBtn.clicked.connect(lambda: self.ui.rightMenuContainer.collapseMenu())
+        self.ui.closeBtn.clicked.connect(lambda: self.ui.rightMenuContainer.collapseMenu())
+
+
+
 
 #####GRAPHICS
 
     #TEMPERATURE
 
+    def printprueba(sef):
+       print("prueba")
     def setup_heatmap(self):
 
         self.figure = plt.figure()
