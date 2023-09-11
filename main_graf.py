@@ -92,7 +92,7 @@ class MainWindow(QMainWindow):
         # CLOSE RIGHT MENU WIDGET SIZE
         self.ui.closeRightMenuBtn.clicked.connect(lambda: self.ui.rightMenuContainer.collapseMenu())
 
-
+        self.ui.closeRightMenuBtn.clicked.connect(lambda: self.ui.rightMenuContainer.collapseMenu())
 
 
 #####GRAPHICS
@@ -178,12 +178,6 @@ class MainWindow(QMainWindow):
 
         self.canvas.draw()
 
-### RECTANGLE
-        #RECTANBLE INCREMENT
-        # Cambiar el valor de las posiciones por pantalla
-        self.step_x = 2
-        self.step_y = 2
-
     def move_rectangle(self):
         #QTWidht= 731
         #QTHight= 678
@@ -193,21 +187,27 @@ class MainWindow(QMainWindow):
         # new_x = rect_position.x() + self.step_x
         #new_y = rect_position.y() + self.step_y
 
+        x = 0
+        y = 0
 
-        new_x = rect_position.x() + self.step_x
-        new_y = rect_position.y() + self.step_y
+        new_x = round(self.ui.label_12.width()*(x/100))
+        new_y = round(self.ui.label_12.height()*(1-y/100))
 
 
         # Cambiar la dirección cuando golpea los límites
-        if new_x + self.ui.rect_label.width() > self.ui.label_12.width() or new_x < 0:
-            self.step_x = -self.step_x
+        if new_x + self.ui.rect_label.width() > self.ui.label_12.width():
+            new_x = self.ui.label_12.width()-self.ui.rect_label.width()
+        elif new_x < 0:
+            new_x = 0
 
-        if new_y + self.ui.rect_label.height() > self.ui.label_12.height() or new_y < 0:
-            self.step_y = -self.step_y
+        if new_y + self.ui.rect_label.height() > self.ui.label_12.height():
+            new_y = self.ui.label_12.height()-self.ui.rect_label.height()
+        elif new_y < 0:
+            new_y = 0
 
         self.ui.rect_label.move(new_x, new_y)
-        self.ui.label_16.setText( str(new_y))
-        self.ui.label_17.setText( str(new_x))
+        self.ui.label_16.setText( str(x))
+        self.ui.label_17.setText( str(y))
 
 ########################################################################
 ## EXECUTE  APP
