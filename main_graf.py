@@ -120,6 +120,7 @@ class MainWindow(QMainWindow):
 
 
 
+
     #FLOW
     def setup_flowmap(self):
         self.figure = plt.figure()
