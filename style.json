@@ -27,17 +27,25 @@
 		{
 		"name": "leftMenuContainer",
 		"defaultSize": [{
-			"width": 250,
+			"width": 340,
 			"height": "parent"
 		}],
 		"collapsedSize": [{
-			"width": 90,
+			"width": 110,
 			"height": "parent"
 		}],
 		"expandedSize": [{
 			"width": 340	,
 
 			"height": "parent"
+		}],
+
+		"toggleButton": [{
+			"buttonName": "menuBtn",
+			"icons": [{
+				"whenMenuIsCollapsed": ":/Icons/Images/icons/align-justify.svg",
+				"whenMenuIsExpanded": ":/Icons/Images/icons/chevron-left.svg"
+			}]
 		}],
 
 		"menuTransitionAnimation": [{
@@ -56,7 +64,7 @@
 			"height": "parent"
 		}],
 		"expandedSize": [{
-			"width": 350,
+			"width": 110,
 			"height": "parent"
 		}],
 		"menuTransitionAnimation": [{
@@ -93,9 +101,26 @@
 				{
 					"navigationButtons":[
 						{
-							"settingsBtn": "page",
-							"infoBtn": "page_2",
-							"helpBtn": "page_3"
+							"Btemperature": "page",
+							"Bhumidity": "page_2",
+							"Bflow": "page_3"
+
+						}
+					]
+				}
+			]
+
+		},
+
+		{
+			"name":"mainPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1": "m1",
+							"t2": "m2"
+
 
 						}
 					]
@@ -108,9 +133,9 @@
 
 		{
 			"Buttons": [
-				"helpBtn",
-				"infoBtn",
-				"settingsBtn"
+				"Btemperature",
+				"Bhumidity",
+				"Bflow"
 			],
 			"Style":[{
 				"Active": "background-color: #2c313c;",
@@ -119,8 +144,16 @@
 		},
 		{
 			"Buttons": [
-				"pushButton_6",
-				"pushButton_7"
+				"t1",
+				"t2",
+				"t3",
+				"t4",
+				"t5",
+				"t6",
+				"t7",
+				"t8",
+				"t9",
+				"t10"
 
 			],
 			"Style":[{

@@ -26,7 +26,10 @@ from Custom_Widgets.Widgets import *
 # IMPORT Custom widgets
 from Custom_Widgets.Widgets import *
 ########################################################################
-
+#GRAPHICS Version 1.0
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 
 ########################################################################
 ##   MAIN WINDOW CLASS
@@ -36,6 +39,8 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+    #Graphics
+        self.setup_heatmap()
 
 
          # APPLY JSON STYLESHEET
@@ -50,9 +55,9 @@ class MainWindow(QMainWindow):
         self.show()
 
         # EXPAND CENTER MENU WIDGET SIZE
-        self.ui.settingsBtn.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
-        self.ui.infoBtn.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
-        self.ui.helpBtn.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.Btemperature.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.Bhumidity.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.Bflow.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
 
         # CLOSE CENTER MENU WIDGET SIZE
         self.ui.closeCenterMenuBtn.clicked.connect(lambda: self.ui.centerMenuContainer.collapseMenu())
@@ -66,7 +71,25 @@ class MainWindow(QMainWindow):
 
 
 
-##Moving rectangle
+#plot
+    def setup_heatmap(self):
+
+        self.figure = plt.figure()
+        self.canvas = FigureCanvas(self.figure)
+
+        layout = QVBoxLayout(self.ui.heatmapView_2)  # Use the layout of the QGraphicsView
+        layout.addWidget(self.canvas)
+
+        self.plot_heatmap()
+    def plot_heatmap(self):
+        # Generate sample data (replace with your data)
+        data = np.random.rand(10, 10)
+
+        ax = self.figure.add_subplot(111)
+        cax = ax.matshow(data, cmap='viridis')
+        self.figure.colorbar(cax)
+
+        self.canvas.draw()
 
 
 
