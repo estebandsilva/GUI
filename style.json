@@ -122,14 +122,13 @@
 				{
 					"navigationButtons":[
 						{
-							"Btemperature": "m1",
-							"Bhumidity": "m2",
-							"Bflow": "page_3",
-							"Bpressure": "page_6",
-							"Btempcam": "page_7",
-							"Bsolar": "page_8"
-
-
+							"Btemperature": "p1",
+							"Bhumidity": "p2",
+							"Bflow": "p3",
+							"Bpressure": "p4",
+							"Btempcam": "p5",
+							"Bsolar": "p6",
+							"B1": "p7"
 						}
 					]
 				}
@@ -138,15 +137,21 @@
 		},
 
 		{
-			"name":"mainPages_2",
+			"name":"mainPages_1",
 			"navigation":[
 				{
 					"navigationButtons":[
 						{
-							"t1": "m1_2",
-							"t2": "m2_2"
-
-
+							"t1": "m1",
+							"t2": "m2",
+							"t3": "m3",
+							"t4": "m4",
+							"t5": "m5",
+							"t6": "m6",
+							"t7": "m7",
+							"t8": "m8",
+							"t9": "m9",
+							"t10": "m10"
 						}
 					]
 				}
@@ -160,7 +165,11 @@
 			"Buttons": [
 				"Btemperature",
 				"Bhumidity",
-				"Bflow"
+				"Bflow",
+				"Bpressure",
+				"Btempcam",
+				"Bsolar",
+				"B1"
 			],
 			"Style":[{
 				"Active": "background-color: #2c313c;",
@@ -185,7 +194,103 @@
 				"Active": "background-color: #3d4a95;",
 				"NotActive": ""
 			}]
+		},
+		{
+			"Buttons": [
+				"t1_2",
+				"t2_2",
+				"t3_2",
+				"t4_2",
+				"t5_2",
+				"t6_2",
+				"t7_2",
+				"t8_2",
+				"t9_2",
+				"t10_2"
+
+			],
+			"Style":[{
+				"Active": "background-color: #3d4a95;",
+				"NotActive": ""
+			}]
+		},
+		{
+			"Buttons": [
+				"t1_3",
+				"t2_3",
+				"t3_3",
+				"t4_3",
+				"t5_3",
+				"t6_3",
+				"t7_3",
+				"t8_3",
+				"t9_3",
+				"t10_3"
+
+			],
+			"Style":[{
+				"Active": "background-color: #3d4a95;",
+				"NotActive": ""
+			}]
+		},
+		{
+			"Buttons": [
+				"t1_4",
+				"t2_4",
+				"t3_4",
+				"t4_4",
+				"t5_4",
+				"t6_4",
+				"t7_4",
+				"t8_4",
+				"t9_4",
+				"t10_4"
+
+			],
+			"Style":[{
+				"Active": "background-color: #3d4a95;",
+				"NotActive": ""
+			}]
+		},
+		{
+			"Buttons": [
+				"t1_5",
+				"t2_5",
+				"t3_5",
+				"t4_5",
+				"t5_5",
+				"t6_5",
+				"t7_5",
+				"t8_5",
+				"t9_5",
+				"t10_5"
+
+			],
+			"Style":[{
+				"Active": "background-color: #3d4a95;",
+				"NotActive": ""
+			}]
+		},
+		{
+			"Buttons": [
+				"t1_6",
+				"t2_6",
+				"t3_6",
+				"t4_6",
+				"t5_6",
+				"t6_6",
+				"t7_6",
+				"t8_6",
+				"t9_6",
+				"t10_6"
+
+			],
+			"Style":[{
+				"Active": "background-color: #3d4a95;",
+				"NotActive": ""
+			}]
 		}
+
 
 
 

@@ -77,7 +77,7 @@ class MainWindow(QMainWindow):
         self.figure = plt.figure()
         self.canvas = FigureCanvas(self.figure)
 
-        layout = QVBoxLayout(self.ui.m1_3)  # Use the layout of the QGraphicsView
+        layout = QVBoxLayout(self.ui.g1)  # Use the layout of the QGraphicsView
         layout.addWidget(self.canvas)
 
         self.plot_heatmap()
