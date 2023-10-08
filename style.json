@@ -105,8 +105,30 @@
 							"Bhumidity": "page_2",
 							"Bflow": "page_3",
 							"Bpressure": "page_6",
-							"Btempcam": "page_2",
-							"Bsolar": "page_3"
+							"Btempcam": "page_7",
+							"Bsolar": "page_8"
+
+
+						}
+					]
+				}
+			]
+
+		},
+
+		{
+			"name":"mainPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"Btemperature": "m1",
+							"Bhumidity": "m2",
+							"Bflow": "page_3",
+							"Bpressure": "page_6",
+							"Btempcam": "page_7",
+							"Bsolar": "page_8"
+
 
 						}
 					]

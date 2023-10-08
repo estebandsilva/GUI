@@ -1462,7 +1462,7 @@
              <item>
               <widget class="QCustomStackedWidget" name="mainPages">
                <property name="currentIndex">
-                <number>0</number>
+                <number>1</number>
                </property>
                <widget class="QWidget" name="m1">
                 <layout class="QVBoxLayout" name="verticalLayout_41">
@@ -1588,23 +1588,16 @@
                <widget class="QWidget" name="m2">
                 <layout class="QVBoxLayout" name="verticalLayout_17">
                  <item>
-                  <widget class="QLabel" name="m2_1">
+                  <widget class="QLabel" name="label">
                    <property name="text">
                     <string>M2</string>
                    </property>
                   </widget>
                  </item>
-                 <item>
-                  <widget class="QGraphicsView" name="heatmapView"/>
-                 </item>
                 </layout>
                </widget>
                <widget class="QWidget" name="m3">
-                <layout class="QVBoxLayout" name="verticalLayout_18">
-                 <item>
-                  <widget class="QGraphicsView" name="m3_1"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_18"/>
                </widget>
                <widget class="QWidget" name="m4">
                 <property name="maximumSize">
@@ -1613,66 +1606,25 @@
                   <height>16777215</height>
                  </size>
                 </property>
-                <layout class="QVBoxLayout" name="verticalLayout_19">
-                 <item>
-                  <widget class="QGraphicsView" name="m4_1">
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="sizeIncrement">
-                    <size>
-                     <width>-1</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_19"/>
                </widget>
                <widget class="QWidget" name="m5">
-                <layout class="QVBoxLayout" name="verticalLayout_23">
-                 <item>
-                  <widget class="QGraphicsView" name="m5_1"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_23"/>
                </widget>
                <widget class="QWidget" name="m6">
-                <layout class="QVBoxLayout" name="verticalLayout_31">
-                 <item>
-                  <widget class="QGraphicsView" name="m6_1"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_31"/>
                </widget>
                <widget class="QWidget" name="m7">
-                <layout class="QVBoxLayout" name="verticalLayout_25">
-                 <item>
-                  <widget class="QGraphicsView" name="m7_1"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_25"/>
                </widget>
                <widget class="QWidget" name="m8">
-                <layout class="QVBoxLayout" name="verticalLayout_26">
-                 <item>
-                  <widget class="QGraphicsView" name="m8_1"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_26"/>
                </widget>
                <widget class="QWidget" name="m9">
-                <layout class="QVBoxLayout" name="verticalLayout_27">
-                 <item>
-                  <widget class="QGraphicsView" name="m9_1"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_27"/>
                </widget>
                <widget class="QWidget" name="m10">
-                <layout class="QVBoxLayout" name="verticalLayout_8">
-                 <item>
-                  <widget class="QGraphicsView" name="m10_1"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_8"/>
                </widget>
               </widget>
              </item>
