@@ -106,7 +106,9 @@
 							"Bflow": "page_3",
 							"Bpressure": "page_6",
 							"Btempcam": "page_7",
-							"Bsolar": "page_8"
+							"Bsolar": "page_8",
+							"B1": "page_9",
+							"B2": "page_10"
 
 
 						}
@@ -128,7 +130,8 @@
 							"Bpressure": "p4",
 							"Btempcam": "p5",
 							"Bsolar": "p6",
-							"B1": "p7"
+							"B1": "p7",
+							"B2": "p8"
 						}
 					]
 				}
@@ -157,7 +160,163 @@
 				}
 			]
 
+		},
+		{
+			"name":"mainPages_2",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1_2": "m1_2",
+							"t2_2": "m2_2",
+							"t3_2": "m3_2",
+							"t4_2": "m4_2",
+							"t5_2": "m5_2",
+							"t6_2": "m6_2",
+							"t7_2": "m7_2",
+							"t8_2": "m8_2",
+							"t9_2": "m9_2",
+							"t10_2": "m10_2"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"mainPages_3",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1_3": "m1_3",
+							"t2_3": "m2_3",
+							"t3_3": "m3_3",
+							"t4_3": "m4_3",
+							"t5_3": "m5_3",
+							"t6_3": "m6_3",
+							"t7_3": "m7_3",
+							"t8_3": "m8_3",
+							"t9_3": "m9_3",
+							"t10_3": "m10_3"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"mainPages_4",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1_4": "m1_4",
+							"t2_4": "m2_4",
+							"t3_4": "m3_4",
+							"t4_4": "m4_4",
+							"t5_4": "m5_4",
+							"t6_4": "m6_4",
+							"t7_4": "m7_4",
+							"t8_4": "m8_4",
+							"t9_4": "m9_4",
+							"t10_4": "m10_4"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"mainPages_5",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1_5": "m1_5",
+							"t2_5": "m2_5",
+							"t3_5": "m3_5",
+							"t4_5": "m4_5",
+							"t5_5": "m5_5",
+							"t6_5": "m6_5",
+							"t7_5": "m7_5",
+							"t8_5": "m8_5",
+							"t9_5": "m9_5",
+							"t10_5": "m10_5"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"mainPages_6",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1_6": "m1_6",
+							"t2_6": "m2_6",
+							"t3_6": "m3_6",
+							"t4_6": "m4_6",
+							"t5_6": "m5_6",
+							"t6_6": "m6_6",
+							"t7_6": "m7_6",
+							"t8_6": "m8_6",
+							"t9_6": "m9_6",
+							"t10_6": "m10_6"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"mainPages_7",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1_7": "m1_7",
+							"t2_7": "m2_7",
+							"t3_7": "m3_7",
+							"t4_7": "m4_7",
+							"t5_7": "m5_7",
+							"t6_7": "m6_7",
+							"t7_7": "m7_7",
+							"t8_7": "m8_7",
+							"t9_7": "m9_7",
+							"t10_7": "m10_7"
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"mainPages_8",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"t1_8": "m1_8",
+							"t2_8": "m2_8",
+							"t3_8": "m3_8",
+							"t4_8": "m4_8",
+							"t5_8": "m5_8",
+							"t6_8": "m6_8",
+							"t7_8": "m7_8",
+							"t8_8": "m8_8",
+							"t9_8": "m9_8",
+							"t10_8": "m10_8"
+						}
+					]
+				}
+			]
+
 		}
+
+
 	],
 	"QPushButtonGroup": [
 
@@ -169,7 +328,8 @@
 				"Bpressure",
 				"Btempcam",
 				"Bsolar",
-				"B1"
+				"B1",
+				"B2"
 			],
 			"Style":[{
 				"Active": "background-color: #2c313c;",
@@ -289,7 +449,47 @@
 				"Active": "background-color: #3d4a95;",
 				"NotActive": ""
 			}]
+		},
+		{
+			"Buttons": [
+				"t1_7",
+				"t2_7",
+				"t3_7",
+				"t4_7",
+				"t5_7",
+				"t6_7",
+				"t7_7",
+				"t8_7",
+				"t9_7",
+				"t10_7"
+
+			],
+			"Style":[{
+				"Active": "background-color: #3d4a95;",
+				"NotActive": ""
+			}]
+		},
+		{
+			"Buttons": [
+				"t1_8",
+				"t2_8",
+				"t3_8",
+				"t4_8",
+				"t5_8",
+				"t6_8",
+				"t7_8",
+				"t8_8",
+				"t9_8",
+				"t10_8"
+
+			],
+			"Style":[{
+				"Active": "background-color: #3d4a95;",
+				"NotActive": ""
+			}]
 		}
+
+
 
 
 

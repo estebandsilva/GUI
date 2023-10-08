@@ -58,6 +58,13 @@ class MainWindow(QMainWindow):
         self.ui.Btemperature.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
         self.ui.Bhumidity.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
         self.ui.Bflow.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.Bpressure.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.Btempcam.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.Bsolar.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.B1.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+        self.ui.B2.clicked.connect(lambda: self.ui.centerMenuContainer.expandMenu())
+
+
 
         # CLOSE CENTER MENU WIDGET SIZE
         self.ui.closeCenterMenuBtn.clicked.connect(lambda: self.ui.centerMenuContainer.collapseMenu())
