@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1519</width>
+    <width>1309</width>
     <height>982</height>
    </rect>
   </property>
@@ -386,22 +386,7 @@
              <enum>QFrame::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
-             <item>
-              <widget class="QLabel" name="label">
-               <property name="font">
-                <font>
-                 <pointsize>14</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>More Menu</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-             <item alignment="Qt::AlignRight">
+             <item alignment="Qt::AlignLeft">
               <widget class="QPushButton" name="closeCenterMenuBtn">
                <property name="toolTip">
                 <string>Close Menu</string>
@@ -430,7 +415,7 @@
              <string notr="true"/>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page">
              <property name="styleSheet">
@@ -695,57 +680,507 @@
             </widget>
             <widget class="QWidget" name="page_3">
              <layout class="QVBoxLayout" name="verticalLayout_9">
-              <property name="leftMargin">
-               <number>20</number>
-              </property>
               <item>
-               <widget class="QLabel" name="label_5">
-                <property name="minimumSize">
-                 <size>
-                  <width>300</width>
-                  <height>100</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>23</height>
-                 </size>
-                </property>
+               <widget class="QPushButton" name="t1_3">
                 <property name="font">
                  <font>
                   <pointsize>20</pointsize>
                  </font>
                 </property>
                 <property name="text">
-                 <string/>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
+                 <string>1</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QTextBrowser" name="textBrowser">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>600</height>
-                 </size>
+               <widget class="QPushButton" name="t2_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
                 </property>
-                <property name="html">
-                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;If you need any other information or help, don't doubt to visit our website or contact with us.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;Website:&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;( https://www.mequonic.com/ ) &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;(&lt;/span&gt;&lt;a name=&quot;yui_3_17_2_1_1693328266162_199&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;c&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;ontact@mequonic.com )&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t3_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t4_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t5_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t6_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t7_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t8_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t9_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t10_3">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_6">
+             <layout class="QVBoxLayout" name="verticalLayout_28">
+              <item>
+               <widget class="QPushButton" name="t1_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t2_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t3_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t4_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t5_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t6_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t7_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t8_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t9_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t10_4">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_7">
+             <layout class="QVBoxLayout" name="verticalLayout_29">
+              <item>
+               <widget class="QPushButton" name="t1_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t2_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t3_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t4_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t5_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t6_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t7_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t8_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t9_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t10_5">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_8">
+             <layout class="QVBoxLayout" name="verticalLayout_30">
+              <item>
+               <widget class="QPushButton" name="t1_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>1</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t2_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>2</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t3_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>3</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t4_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>4</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t5_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t6_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t7_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t8_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t9_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="t10_6">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>10</string>
                 </property>
                </widget>
               </item>
@@ -1027,10 +1462,10 @@ p, li { white-space: pre-wrap; }
              <item>
               <widget class="QCustomStackedWidget" name="mainPages">
                <property name="currentIndex">
-                <number>1</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="m1">
-                <layout class="QVBoxLayout" name="verticalLayout_24">
+                <layout class="QVBoxLayout" name="verticalLayout_41">
                  <item>
                   <widget class="QLabel" name="label_2">
                    <property name="text">
@@ -1039,14 +1474,121 @@ p, li { white-space: pre-wrap; }
                   </widget>
                  </item>
                  <item>
-                  <widget class="QGraphicsView" name="heatmapView_2"/>
+                  <widget class="QCustomStackedWidget" name="mainPages_2">
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="m1_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_24">
+                     <item>
+                      <widget class="QLabel" name="label_3">
+                       <property name="text">
+                        <string>M1.1</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGraphicsView" name="m1_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m2_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_32">
+                     <item>
+                      <widget class="QLabel" name="M2">
+                       <property name="text">
+                        <string>M2</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGraphicsView" name="m2_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m3_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_33">
+                     <item>
+                      <widget class="QGraphicsView" name="m3_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m4_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_34">
+                     <item>
+                      <widget class="QGraphicsView" name="m4_3">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="sizeIncrement">
+                        <size>
+                         <width>-1</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m5_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_35">
+                     <item>
+                      <widget class="QGraphicsView" name="m5_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m6_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_36">
+                     <item>
+                      <widget class="QGraphicsView" name="m6_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m7_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_37">
+                     <item>
+                      <widget class="QGraphicsView" name="m7_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m8_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_38">
+                     <item>
+                      <widget class="QGraphicsView" name="m8_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m9_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_39">
+                     <item>
+                      <widget class="QGraphicsView" name="m9_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="m10_2">
+                    <layout class="QVBoxLayout" name="verticalLayout_40">
+                     <item>
+                      <widget class="QGraphicsView" name="m10_3"/>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
                  </item>
                 </layout>
                </widget>
                <widget class="QWidget" name="m2">
                 <layout class="QVBoxLayout" name="verticalLayout_17">
                  <item>
-                  <widget class="QLabel" name="label_3">
+                  <widget class="QLabel" name="m2_1">
                    <property name="text">
                     <string>M2</string>
                    </property>
@@ -1060,7 +1602,7 @@ p, li { white-space: pre-wrap; }
                <widget class="QWidget" name="m3">
                 <layout class="QVBoxLayout" name="verticalLayout_18">
                  <item>
-                  <widget class="QGraphicsView" name="flow_graphic"/>
+                  <widget class="QGraphicsView" name="m3_1"/>
                  </item>
                 </layout>
                </widget>
@@ -1073,7 +1615,7 @@ p, li { white-space: pre-wrap; }
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_19">
                  <item>
-                  <widget class="QGraphicsView" name="humidity_graphic">
+                  <widget class="QGraphicsView" name="m4_1">
                    <property name="maximumSize">
                     <size>
                      <width>16777215</width>
@@ -1093,39 +1635,42 @@ p, li { white-space: pre-wrap; }
                <widget class="QWidget" name="m5">
                 <layout class="QVBoxLayout" name="verticalLayout_23">
                  <item>
-                  <widget class="QGraphicsView" name="pressure_graphic"/>
+                  <widget class="QGraphicsView" name="m5_1"/>
                  </item>
                 </layout>
                </widget>
                <widget class="QWidget" name="m6">
-                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <layout class="QVBoxLayout" name="verticalLayout_31">
                  <item>
-                  <widget class="QPushButton" name="pushButton_4">
-                   <property name="font">
-                    <font>
-                     <pointsize>20</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Solar</string>
-                   </property>
-                  </widget>
+                  <widget class="QGraphicsView" name="m6_1"/>
                  </item>
                 </layout>
                </widget>
                <widget class="QWidget" name="m7">
-                <layout class="QVBoxLayout" name="verticalLayout_25"/>
+                <layout class="QVBoxLayout" name="verticalLayout_25">
+                 <item>
+                  <widget class="QGraphicsView" name="m7_1"/>
+                 </item>
+                </layout>
                </widget>
                <widget class="QWidget" name="m8">
-                <layout class="QVBoxLayout" name="verticalLayout_26"/>
+                <layout class="QVBoxLayout" name="verticalLayout_26">
+                 <item>
+                  <widget class="QGraphicsView" name="m8_1"/>
+                 </item>
+                </layout>
                </widget>
                <widget class="QWidget" name="m9">
-                <layout class="QVBoxLayout" name="verticalLayout_27"/>
+                <layout class="QVBoxLayout" name="verticalLayout_27">
+                 <item>
+                  <widget class="QGraphicsView" name="m9_1"/>
+                 </item>
+                </layout>
                </widget>
                <widget class="QWidget" name="m10">
                 <layout class="QVBoxLayout" name="verticalLayout_8">
                  <item>
-                  <widget class="QGraphicsView" name="graphicsView"/>
+                  <widget class="QGraphicsView" name="m10_1"/>
                  </item>
                 </layout>
                </widget>
@@ -1277,37 +1822,7 @@ QPushButton#startBtn:pressed{
                      <property name="frameShadow">
                       <enum>QFrame::Raised</enum>
                      </property>
-                     <layout class="QHBoxLayout" name="horizontalLayout_13">
-                      <item>
-                       <widget class="QPushButton" name="startBtn">
-                        <property name="minimumSize">
-                         <size>
-                          <width>100</width>
-                          <height>100</height>
-                         </size>
-                        </property>
-                        <property name="font">
-                         <font>
-                          <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true"/>
-                        </property>
-                        <property name="text">
-                         <string>Start</string>
-                        </property>
-                        <property name="iconSize">
-                         <size>
-                          <width>16</width>
-                          <height>16</height>
-                         </size>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
+                     <layout class="QHBoxLayout" name="horizontalLayout_13"/>
                     </widget>
                    </item>
                    <item>
@@ -1333,31 +1848,7 @@ QPushButton#stopBtn:pressed{
                      <property name="frameShadow">
                       <enum>QFrame::Raised</enum>
                      </property>
-                     <layout class="QHBoxLayout" name="horizontalLayout_14">
-                      <item>
-                       <widget class="QPushButton" name="stopBtn">
-                        <property name="minimumSize">
-                         <size>
-                          <width>100</width>
-                          <height>100</height>
-                         </size>
-                        </property>
-                        <property name="font">
-                         <font>
-                          <pointsize>20</pointsize>
-                          <weight>75</weight>
-                          <bold>true</bold>
-                         </font>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true"/>
-                        </property>
-                        <property name="text">
-                         <string>Stop</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
+                     <layout class="QHBoxLayout" name="horizontalLayout_14"/>
                     </widget>
                    </item>
                   </layout>
@@ -1389,27 +1880,6 @@ QPushButton#stopBtn:pressed{
                   </widget>
                   <widget class="QWidget" name="page_5">
                    <layout class="QVBoxLayout" name="verticalLayout_14">
-                    <item>
-                     <widget class="QLabel" name="label_10">
-                      <property name="minimumSize">
-                       <size>
-                        <width>200</width>
-                        <height>0</height>
-                       </size>
-                      </property>
-                      <property name="font">
-                       <font>
-                        <pointsize>20</pointsize>
-                       </font>
-                      </property>
-                      <property name="text">
-                       <string>Position ( X, Y )</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
                     <item alignment="Qt::AlignHCenter">
                      <widget class="QFrame" name="frame_9">
                       <property name="minimumSize">
@@ -1439,32 +1909,7 @@ QPushButton#stopBtn:pressed{
                          <property name="frameShadow">
                           <enum>QFrame::Raised</enum>
                          </property>
-                         <layout class="QVBoxLayout" name="verticalLayout_20">
-                          <item>
-                           <widget class="QLabel" name="label_13">
-                            <property name="font">
-                             <font>
-                              <pointsize>18</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>( X ) AXIS</string>
-                            </property>
-                           </widget>
-                          </item>
-                          <item>
-                           <widget class="QLabel" name="label_9">
-                            <property name="font">
-                             <font>
-                              <pointsize>18</pointsize>
-                             </font>
-                            </property>
-                            <property name="text">
-                             <string>( Y ) AXIS</string>
-                            </property>
-                           </widget>
-                          </item>
-                         </layout>
+                         <layout class="QVBoxLayout" name="verticalLayout_20"/>
                         </widget>
                        </item>
                        <item>
@@ -1613,7 +2058,7 @@ QPushButton#stopBtn:pressed{
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1519</width>
+     <width>1309</width>
      <height>26</height>
     </rect>
    </property>

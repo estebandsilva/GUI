@@ -64,7 +64,7 @@
 			"height": "parent"
 		}],
 		"expandedSize": [{
-			"width": 110,
+			"width": 90,
 			"height": "parent"
 		}],
 		"menuTransitionAnimation": [{
@@ -103,7 +103,10 @@
 						{
 							"Btemperature": "page",
 							"Bhumidity": "page_2",
-							"Bflow": "page_3"
+							"Bflow": "page_3",
+							"Bpressure": "page_6",
+							"Btempcam": "page_2",
+							"Bsolar": "page_3"
 
 						}
 					]
@@ -113,13 +116,13 @@
 		},
 
 		{
-			"name":"mainPages",
+			"name":"mainPages_2",
 			"navigation":[
 				{
 					"navigationButtons":[
 						{
-							"t1": "m1",
-							"t2": "m2"
+							"t1": "m1_2",
+							"t2": "m2_2"
 
 
 						}
