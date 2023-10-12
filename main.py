@@ -1,18 +1,13 @@
-#########Jere GUI
-#pip install PySide2
-#pip install PySide6
-#pip install Pycairo
-#pip install pipwin
+#########Instalación por terminal a parte de los requirements
+
 #pipwin install cairocffi
-#pip install pyqt5
+
 
 ##Generamos el python con PySide2
 #pyuic5 -x my_ui.ui -o my_ui.py
 #lo mismo con resources
 #pyrcc5 resources.qrc -o resources_rc.py
 
-#otros
-# pip install QT-PyQt-PySide-Custom-Widgets
 
 
 
