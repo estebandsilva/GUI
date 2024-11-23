@@ -1,0 +1,156 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"Test flow ",
+			"icon":"::/Images/Images/Assa_Abloy.png",
+			"frameless": true,
+			"transluscentBg": true,
+			"sizeGrip": "sizeGrip",
+			"navigation":[
+				{
+					"minimize":"minimizeBtn",
+					"close": "closeBtn",
+					"restore":[
+						{	
+							"buttonName": "restoreBtn",
+							"normalIcon": ":/Icons/Images/icons/square.svg",
+							"maximizedIcon": ":/Icons/Images/icons/copy.svg"
+						}
+					],
+					"moveWindow": "headerContiner",
+					"tittleBar": "headerContiner"
+				}
+			]
+		}
+	],
+	"QCustomSlideMenu": [
+		{
+		"name": "leftMenuContainer",
+		"defaultSize": [{
+			"width": 90,
+			"height": "parent"
+		}],
+		"collapsedSize": [{
+			"width": 90,
+			"height": "parent"
+		}],
+		"expandedSize": [{
+			"width": 340	,
+
+			"height": "parent"
+		}],
+		"toggleButton": [{
+			"buttonName": "menuBtn",
+			"icons": [{
+				"whenMenuIsCollapsed": ":/Icons/Images/icons/align-justify.svg",
+				"whenMenuIsExpanded": ":/Icons/Images/icons/chevron-left.svg"
+			}]
+		}],
+		"menuTransitionAnimation": [{
+			"animationDuration": 500,
+			"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+		"name": "centerMenuContainer",
+		"defaultSize": [{
+			"width": 0,
+			"height": "parent"
+		}],
+		"collapsedSize": [{
+			"width": 0,
+			"height": "parent"
+		}],
+		"expandedSize": [{
+			"width": 350,
+			"height": "parent"
+		}],
+		"menuTransitionAnimation": [{
+			"animationDuration": 500,
+			"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+		"name": "rightMenuContainer",
+		"defaultSize": [{
+			"width": 0,
+			"height": "auto"
+		}],
+		"collapsedSize": [{
+			"width": 0,
+			"height": "auto"
+		}],
+		"expandedSize": [{
+			"width": 300,
+			"height": "auto"
+		}],
+		"menuTransitionAnimation": [{
+			"animationDuration": 500,
+			"animationEasingCurve": "Linear"
+			}]
+		}
+	],
+
+	"QStackedWidget":[
+		{
+			"name":"mainPages",
+			"navigation":[
+				{
+					"navigationButtons": [
+						{
+							"homeBtn": "page_8",
+							"dataBtn": "temperature_page"
+
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"rightMenuPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+
+						}
+					]
+				}
+			]
+
+		},
+		{
+			"name":"centerMenuPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+
+
+						}
+					]
+				}
+			]
+
+		}
+	],
+	"QPushButtonGroup": [
+		{
+			"Buttons": [
+				"homeBtn",
+				"dataBtn"
+			],
+			"Style":[{
+				"Active": "background-color: #1f232a;",
+				"NotActive": ""
+			}]
+		}
+
+
+
+
+
+
+	]
+}

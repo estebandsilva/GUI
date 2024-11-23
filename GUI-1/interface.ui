@@ -1,0 +1,3627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2017</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> *{
+	border:none;
+    background-color:transparent;
+    background: transparent;
+    padding:0;
+    margin:0;
+    color: #fff;
+}
+#centralwidget{
+	background-color:#1f232a;
+}
+
+#leftMenuSubContainer{
+  background-color:#16191d;
+}
+#leftMenuSubContainer QPushButton{
+  text-align: left;
+  padding:5px 10px; 
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+
+}
+
+#centerMenuSubContainer,#rightMenuSubContainer{
+	background-color:#2c313c;
+}
+
+#frame_4,#frame_8,#popupNotificationSubContainer{
+	background-color:#16191d;
+	border-radius:10px;
+
+}
+
+#headerContiner{
+	background-color:#2c313c;
+}
+
+#frame_29{
+	background-color:#ffffff;
+
+}
+#mainbodyContent{
+	background-color: #fff;
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QCustomSlideMenu" name="leftMenuContainer" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
+        <widget class="QWidget" name="leftMenuSubContainer" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="menuBtn">
+               <property name="toolTip">
+                <string>Menu</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/Icons/Images/icons/align-justify.svg</normaloff>:/Icons/Images/icons/align-justify.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>70</width>
+                 <height>70</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignTop">
+           <widget class="QFrame" name="frame_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="homeBtn">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="toolTip">
+                <string>Home</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: #1f232a</string>
+               </property>
+               <property name="text">
+                <string>Panels</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/Icons/Images/icons/home.svg</normaloff>:/Icons/Images/icons/home.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>70</width>
+                 <height>70</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="dataBtn">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="toolTip">
+                <string>Data Analysis</string>
+               </property>
+               <property name="text">
+                <string>Information</string>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/Icons/Images/icons/info.svg</normaloff>:/Icons/Images/icons/info.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>70</width>
+                 <height>70</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCustomSlideMenu" name="centerMenuContainer" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>0</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
+        <widget class="QWidget" name="centerMenuSubContainer" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>350</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item alignment="Qt::AlignTop">
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>More Menu</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignRight">
+              <widget class="QPushButton" name="closeCenterMenuBtn">
+               <property name="toolTip">
+                <string>Close Menu</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/Icons/Images/icons/x-circle.svg</normaloff>:/Icons/Images/icons/x-circle.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>40</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCustomStackedWidget" name="centerMenuPages">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="currentIndex">
+             <number>2</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Settings</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="font">
+                 <font>
+                  <pointsize>14</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Information</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_3">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <property name="leftMargin">
+               <number>20</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="minimumSize">
+                 <size>
+                  <width>300</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTextBrowser" name="textBrowser">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>600</height>
+                 </size>
+                </property>
+                <property name="html">
+                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;If you need any other information or help, don't doubt to visit our website or contact with us.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;Website:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;( https://www.mequonic.com/ ) &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-style:italic;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;(&lt;/span&gt;&lt;a name=&quot;yui_3_17_2_1_1693328266162_199&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;c&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-style:italic;&quot;&gt;ontact@mequonic.com )&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="mainBodyContainer" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="headerContiner" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>16715</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item alignment="Qt::AlignLeft">
+           <widget class="QFrame" name="frame_5">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Proyecto: Paneles piscina</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QFrame" name="frame_6">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="spacing">
+              <number>30</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight">
+           <widget class="QFrame" name="frame_7">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>30</number>
+             </property>
+             <property name="leftMargin">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="rightMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="minimizeBtn">
+               <property name="toolTip">
+                <string>Minimize Window </string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/Icons/Images/icons/minus.svg</normaloff>:/Icons/Images/icons/minus.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>60</width>
+                 <height>60</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="restoreBtn">
+               <property name="toolTip">
+                <string>Restore Window</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/Icons/Images/icons/square.svg</normaloff>:/Icons/Images/icons/square.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>60</width>
+                 <height>60</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="closeBtn">
+               <property name="toolTip">
+                <string>Close Window</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="resources.qrc">
+                 <normaloff>:/Icons/Images/icons/x.svg</normaloff>:/Icons/Images/icons/x.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>60</width>
+                 <height>60</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="mainbodyContent" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>688</width>
+           <height>198</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QWidget" name="mainContentsContainer" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <item>
+              <widget class="QCustomStackedWidget" name="mainPages">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="page_8">
+                <widget class="QLabel" name="label_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>76</x>
+                   <y>20</y>
+                   <width>1600</width>
+                   <height>200</height>
+                  </rect>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>1558</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>1600</width>
+                   <height>100</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/Paneles 1-10.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_1">
+                 <property name="geometry">
+                  <rect>
+                   <x>190</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>327</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>462</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>598</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>736</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>874</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>1011</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>1147</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>1284</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="close_10">
+                 <property name="geometry">
+                  <rect>
+                   <x>1422</x>
+                   <y>20</y>
+                   <width>138</width>
+                   <height>194</height>
+                  </rect>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>481</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/Images/Images/A175000-Modulo_cerrado_2.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QFrame" name="frame_19">
+                 <property name="geometry">
+                  <rect>
+                   <x>190</x>
+                   <y>300</y>
+                   <width>1391</width>
+                   <height>361</height>
+                  </rect>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                  <item>
+                   <widget class="QFrame" name="frame_17">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_1{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_1">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g</zorder>
+                    <zorder>label_1_up_w</zorder>
+                    <zorder>label_1_up_g</zorder>
+                    <zorder>label_1_down_w</zorder>
+                    <zorder>panel_1</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_30">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_2{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                     <property name="autoRepeat">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_2</zorder>
+                    <zorder>panel_2</zorder>
+                    <zorder>label_1_down_w_2</zorder>
+                    <zorder>label_1_up_w_2</zorder>
+                    <zorder>label_1_up_g_2</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_31">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_3{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_3</zorder>
+                    <zorder>panel_3</zorder>
+                    <zorder>label_1_down_w_3</zorder>
+                    <zorder>label_1_up_w_3</zorder>
+                    <zorder>label_1_up_g_3</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_32">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_4{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_4">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_4">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_4">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_4">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_4">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_4</zorder>
+                    <zorder>panel_4</zorder>
+                    <zorder>label_1_down_w_4</zorder>
+                    <zorder>label_1_up_w_4</zorder>
+                    <zorder>label_1_up_g_4</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_33">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_5{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_5">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_12">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_12">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_12">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_12">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_12</zorder>
+                    <zorder>panel_5</zorder>
+                    <zorder>label_1_down_w_12</zorder>
+                    <zorder>label_1_up_w_12</zorder>
+                    <zorder>label_1_up_g_12</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_43">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_6{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_6">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_13">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_13">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_13">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_13">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_13</zorder>
+                    <zorder>panel_6</zorder>
+                    <zorder>label_1_down_w_13</zorder>
+                    <zorder>label_1_up_w_13</zorder>
+                    <zorder>label_1_up_g_13</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_44">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_7{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_7">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_14</zorder>
+                    <zorder>panel_7</zorder>
+                    <zorder>label_1_down_w_14</zorder>
+                    <zorder>label_1_up_w_14</zorder>
+                    <zorder>label_1_up_g_14</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_45">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_8{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_8">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_15">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_15">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_15">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_15">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_15</zorder>
+                    <zorder>panel_8</zorder>
+                    <zorder>label_1_down_w_15</zorder>
+                    <zorder>label_1_up_w_15</zorder>
+                    <zorder>label_1_up_g_15</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_46">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_9{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_9">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_16">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_16">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_16">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_16">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_16</zorder>
+                    <zorder>panel_9</zorder>
+                    <zorder>label_1_down_w_16</zorder>
+                    <zorder>label_1_up_w_16</zorder>
+                    <zorder>label_1_up_g_16</zorder>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_47">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton#panel_10{
+	background-color: rgb(255, 255, 255);
+	border-radius:10px;
+    border: 4px solid black;
+    border: 4px solid black;
+
+}
+
+
+QPushButton#panel_1o:pressed{
+	background-color: rgb(21, 202, 1);
+}
+
+
+QPushButton#panel_1c{
+	background-color: rgb(179, 35, 10);
+	border-radius:10px;
+}
+
+
+QPushButton#panel_1c:pressed{
+	background-color: rgb(255, 17, 0);
+}
+</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="panel_10">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>230</y>
+                       <width>100</width>
+                       <height>100</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset>
+                       <selectedoff>Images/Empty.png</selectedoff>
+                       <selectedon>Images/tick.png</selectedon>
+                      </iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>70</width>
+                       <height>70</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_w_17">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_down_g_17">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>130</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-down-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_w_17">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-white.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="label_1_up_g_17">
+                     <property name="geometry">
+                      <rect>
+                       <x>20</x>
+                       <y>30</y>
+                       <width>91</width>
+                       <height>81</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>Images/Arrow-up-green.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                    <zorder>label_1_down_g_17</zorder>
+                    <zorder>panel_10</zorder>
+                    <zorder>label_1_down_w_17</zorder>
+                    <zorder>label_1_up_w_17</zorder>
+                    <zorder>label_1_up_g_17</zorder>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QFrame" name="frame_29">
+                 <property name="geometry">
+                  <rect>
+                   <x>80</x>
+                   <y>220</y>
+                   <width>1592</width>
+                   <height>81</height>
+                  </rect>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QFrame" name="frame_16">
+                  <property name="geometry">
+                   <rect>
+                    <x>160</x>
+                    <y>10</y>
+                    <width>1371</width>
+                    <height>51</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#num_1,#num_2,#num_3,#num_4,#num_5,#num_6,#num_7,#num_8,#num_9,#num_10{
+	color:#000000;
+
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_16">
+                   <item>
+                    <widget class="QLabel" name="num_1">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>1</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_2">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>2</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_3">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>3</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_4">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>4</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_5">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>5</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_6">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>6</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_7">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>7</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_8">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>8</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_9">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>9</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="num_10">
+                     <property name="font">
+                      <font>
+                       <pointsize>20</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>10</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+                <widget class="QFrame" name="frame_18">
+                 <property name="geometry">
+                  <rect>
+                   <x>300</x>
+                   <y>670</y>
+                   <width>1251</width>
+                   <height>201</height>
+                  </rect>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QPushButton" name="iniciar">
+                  <property name="geometry">
+                   <rect>
+                    <x>490</x>
+                    <y>20</y>
+                    <width>271</width>
+                    <height>81</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 0, 0);
+background-color: rgb(128, 231, 117);
+border-radius:10px;
+border: 4px solid black;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>Images/backward_arrow.svg</normaloff>Images/backward_arrow.svg</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="geometry">
+                   <rect>
+                    <x>70</x>
+                    <y>20</y>
+                    <width>271</width>
+                    <height>81</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 0, 0);
+border-radius:10px;
+border: 4px solid black;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>Images/Circle.svg</normaloff>Images/Circle.svg</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="config">
+                  <property name="geometry">
+                   <rect>
+                    <x>850</x>
+                    <y>80</y>
+                    <width>121</width>
+                    <height>71</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(0, 170, 255);
+background-color: rgb(69, 143, 255);
+border-radius:10px;
+border: 4px solid black;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>Images/gear.svg</normaloff>Images/gear.svg</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                 <widget class="QPushButton" name="intercambiar">
+                  <property name="geometry">
+                   <rect>
+                    <x>1070</x>
+                    <y>80</y>
+                    <width>121</width>
+                    <height>71</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 0, 0);
+background-color: rgb(221, 235, 65);
+border-radius:10px;
+border: 4px solid black;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>Images/arrow_up_down.svg</normaloff>Images/arrow_up_down.svg</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>50</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                 </widget>
+                </widget>
+                <zorder>label_11</zorder>
+                <zorder>close_1</zorder>
+                <zorder>close_2</zorder>
+                <zorder>close_3</zorder>
+                <zorder>close_4</zorder>
+                <zorder>close_5</zorder>
+                <zorder>close_6</zorder>
+                <zorder>close_8</zorder>
+                <zorder>close_9</zorder>
+                <zorder>close_10</zorder>
+                <zorder>close_7</zorder>
+                <zorder>frame_19</zorder>
+                <zorder>frame_29</zorder>
+                <zorder>frame_18</zorder>
+               </widget>
+               <widget class="QWidget" name="temperature_page">
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QFrame" name="frame_21">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <widget class="QLabel" name="label_26">
+                    <property name="geometry">
+                     <rect>
+                      <x>160</x>
+                      <y>310</y>
+                      <width>111</width>
+                      <height>31</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>20</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Piston 1</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_27">
+                    <property name="geometry">
+                     <rect>
+                      <x>350</x>
+                      <y>310</y>
+                      <width>121</width>
+                      <height>31</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>20</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Piston 2</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_28">
+                    <property name="geometry">
+                     <rect>
+                      <x>540</x>
+                      <y>310</y>
+                      <width>111</width>
+                      <height>31</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>20</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Piston 3</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="FC1_1">
+                    <property name="geometry">
+                     <rect>
+                      <x>180</x>
+                      <y>420</y>
+                      <width>71</width>
+                      <height>81</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>F.C 1</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="FC1_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>180</x>
+                      <y>550</y>
+                      <width>71</width>
+                      <height>81</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>20</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>F.C 2</string>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="flow_page">
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <item>
+                  <widget class="QGraphicsView" name="flow_graphic"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="humidity_page">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_19">
+                 <item>
+                  <widget class="QGraphicsView" name="humidity_graphic">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="sizeIncrement">
+                    <size>
+                     <width>-1</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="pressure_page">
+                <layout class="QVBoxLayout" name="verticalLayout_23">
+                 <item>
+                  <widget class="QGraphicsView" name="pressure_graphic"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="flow_1">
+                <layout class="QVBoxLayout" name="verticalLayout_24">
+                 <item>
+                  <widget class="QOpenGLWidget" name="flow_1gl"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="flow_2">
+                <layout class="QVBoxLayout" name="verticalLayout_25">
+                 <item>
+                  <widget class="QOpenGLWidget" name="flow_2gl"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="energy_1">
+                <layout class="QVBoxLayout" name="verticalLayout_26">
+                 <item>
+                  <widget class="QOpenGLWidget" name="energy_1gl"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="energy_2">
+                <layout class="QVBoxLayout" name="verticalLayout_27">
+                 <item>
+                  <widget class="QOpenGLWidget" name="energy_2gl"/>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight">
+           <widget class="QCustomSlideMenu" name="rightMenuContainer" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="rightMenuSubContainer" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>200</width>
+                 <height>500</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <property name="spacing">
+                 <number>5</number>
+                </property>
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="frame_8">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9">
+                   <item alignment="Qt::AlignHCenter">
+                    <widget class="QLabel" name="label_7">
+                     <property name="font">
+                      <font>
+                       <pointsize>14</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Right Menu</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignRight">
+                    <widget class="QPushButton" name="closeRightMenuBtn">
+                     <property name="toolTip">
+                      <string>Close Menu</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="resources.qrc">
+                       <normaloff>:/Icons/Images/icons/x-circle.svg</normaloff>:/Icons/Images/icons/x-circle.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>40</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_13">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_16">
+                   <item>
+                    <widget class="QFrame" name="frame_14">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton#startBtn{
+	
+	background-color: rgb(0, 111, 37);
+}
+
+
+
+QPushButton#startBtn:pressed{
+
+
+	background-color: rgb(21, 202, 1);
+
+}
+</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_13">
+                      <item>
+                       <widget class="QPushButton" name="startBtn">
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>100</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>20</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <property name="text">
+                         <string>Start</string>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>16</width>
+                          <height>16</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_15">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton#stopBtn{
+	background-color: rgb(179, 35, 10);
+}
+
+
+
+QPushButton#stopBtn:pressed{
+
+
+	background-color: rgb(255, 17, 0);
+
+}
+</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_14">
+                      <item>
+                       <widget class="QPushButton" name="stopBtn">
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>100</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>20</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <property name="text">
+                         <string>Stop</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignVCenter">
+                 <widget class="QCustomStackedWidget" name="rightMenuPages">
+                  <property name="currentIndex">
+                   <number>1</number>
+                  </property>
+                  <widget class="QWidget" name="page_4">
+                   <layout class="QVBoxLayout" name="verticalLayout_13">
+                    <item>
+                     <widget class="QLabel" name="label_8">
+                      <property name="font">
+                       <font>
+                        <pointsize>11</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Profile</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="page_5">
+                   <layout class="QVBoxLayout" name="verticalLayout_14">
+                    <item>
+                     <widget class="QLabel" name="label_10">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Position ( X, Y )</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignHCenter">
+                     <widget class="QFrame" name="frame_9">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_10">
+                       <item>
+                        <widget class="QFrame" name="frame_10">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_20">
+                          <item>
+                           <widget class="QLabel" name="label_13">
+                            <property name="font">
+                             <font>
+                              <pointsize>18</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>( X ) AXIS</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_9">
+                            <property name="font">
+                             <font>
+                              <pointsize>18</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>( Y ) AXIS</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QFrame" name="frame_12">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_22">
+                          <item>
+                           <widget class="QLabel" name="label_17">
+                            <property name="font">
+                             <font>
+                              <pointsize>18</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>TextLabel</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="label_16">
+                            <property name="font">
+                             <font>
+                              <pointsize>18</pointsize>
+                             </font>
+                            </property>
+                            <property name="text">
+                             <string>TextLabel</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="footeContainer" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <property name="spacing">
+           <number>7</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_11">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_21">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="sizeGrip">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_12"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2017</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomSlideMenu</class>
+   <extends>QWidget</extends>
+   <header location="global">Custom_Widgets.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">Custom_Widgets.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
