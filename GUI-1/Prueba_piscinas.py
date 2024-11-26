@@ -1,10 +1,8 @@
 ####REQUIREMENTS
-#pip install PySide2
-#pip install PySide6
-#pip install Pycairo
+#Entorno Virtual cambiar libreria site-packages
 #pip install pipwin
 #pipwin install cairocffi
-#pip install pyqt5
+#pip install -r requirements.txt
 
 ##Generamos el python con PySide2
     #pyuic5 -x interface.ui -o ui_interface.py
@@ -35,6 +33,7 @@ import sys
 from ui_interface import *
 # from PyQt5.QtWidgets import QApplication, QWidget, QLabel
 # IMPORTED ON ui_interface
+from PyQt5.QtCore import QTimer
 
 from Custom_Widgets.Widgets import *
 
@@ -53,11 +52,9 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.timer = QTimer()
 
-
-
-
-         # APPLY JSON STYLESHEET
+        # APPLY JSON STYLESHEET
         ########################################################################
         # self = QMainWindow class
         # self.ui = Ui_MainWindow / user interface class
@@ -80,16 +77,26 @@ class MainWindow(QMainWindow):
         self.ui.closeRightMenuBtn.clicked.connect(lambda: self.ui.rightMenuContainer.collapseMenu())
         self.ui.closeRightMenuBtn.clicked.connect(lambda: self.ui.rightMenuContainer.collapseMenu())
 
-        #self.timer = QTimer(self)
-        #self.timer.timeout.connect(lambda: self.blink_labels)
+
+
         ### BOTONES DEL PANEL
         #self.ui.panel_1.clicked.connect(lambda:self.ui.label_4.lower())
         self.ui.iniciar.clicked.connect(self.handle_button_click)
+        self.timer.timeout.connect(self.blink_labels)
+        self.is_label_1_up_g_visible = True  # Para empezar con label_1_up_g visible
+
+        #self.timer.timeout.connect(lambda: print("time out"))
+
     def handle_button_click(self):
+        print("Button click")
         if self.ui.panel_1.isChecked() == True:
+            print("Checkbox 1 está marcado.")
+
             #self.ui.label_1_up_g.lower()
             #self.ui.label_1_up_g.raise_()
-            self.timer.start(200)
+            self.timer.start(2000)
+
+
             self.blink_count = 0
 
             self.ui.close_1.lower()
@@ -97,14 +104,17 @@ class MainWindow(QMainWindow):
             self.ui.close_1.raise_()
 
         if self.ui.panel_2.isChecked()==True:
-            print("Checkbox 1 está marcado.")
+            print("Checkbox 2 está marcado.")
             self.ui.close_2.lower()
         else:
             self.ui.close_2.raise_()
 
     def blink_labels(self):
-        """Intercambia la visibilidad de los dos labels, poniéndolos uno encima del otro."""
-        if self.is_label_1_up_g_visible:
+        print("Blinking")
+        #"""Intercambia la visibilidad de los dos labels, poniéndolos uno encima del otro."""
+        if self.is_label_1_up_g_visible :
+            print("detección de visivilidad")
+
             self.ui.label_1_up_g.lower()  # Mueve label_1_up_g debajo
             self.ui.label_1_up_w.raise_()  # Mueve label_1_up_w encima
         else:
